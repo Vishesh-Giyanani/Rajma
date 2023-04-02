@@ -5,7 +5,7 @@ import Second from './components/Second';
 function App() {
   return (
     <div >
-
+      
       <Hero/>
       <Second/>
     </div>
