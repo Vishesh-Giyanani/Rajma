@@ -18,7 +18,7 @@ export function CardComponent() {
   ];
   return (
     <>
-      <div className="grid gap-2 lg:grid-cols-3 content-center	">
+      <div className="grid gap-2 lg:grid-cols-3 content-center">
         {posts.map((items, key) => (
           <div className="w-full rounded-lg lg:max-w-sm" key={key}>
             <img
@@ -53,13 +53,34 @@ const Second = () => {
         </h2>
         <CardComponent />
       </div>
-      <div className="flex">
-      <img
+
+      <div className="flex flex-wrap ">
+        <div className="flex-auto">
+          <img
             className="flex-shrink-0 m-32"
             src={require("../images/Smile.png")}
             alt="good"
           ></img>
-          
+        </div>
+        <div className="flex-auto">
+          <h2 className="text-5xl font-light leading-normal text-black mt-32 mb-11">
+            We connect our customers
+            <br /> with the best, and help them
+            <br /> keep up-and stay open.
+          </h2>
+          <ul class="list-disc text-xl p-6">
+            <li className="">
+              <p className="text-2xl leading-loose">We connect our customers with the best.</p>
+            </li>
+            <li className="">
+              <p className="text-2xl leading-loose">Advisor success customer launch party.</p>
+            </li>
+            <li className="">
+              <p className="text-2xl leading-loose">Business-to-consumer long tail.</p>
+            </li>
+          </ul>
+          <button className="text-xl text-white font-semibold mt-9 cursor-pointer bg-blue-800 rounded-3xl py-3 px-11 underline-offset-4 flex align-middle">Buy Now</button>
+        </div>
       </div>
     </div>
   );
